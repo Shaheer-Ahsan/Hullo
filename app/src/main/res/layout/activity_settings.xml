@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmaincontent"
+    tools:context="com.shaheer_ahsan.hullo.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/defaultavatar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintBottom_toTopOf="@+id/settings_display_name" />
+
+    <TextView
+        android:id="@+id/settings_display_name"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:text="Hi there! I am using Hullo."
+        android:textAlignment="center"
+        android:textColor="@color/SplashBackground"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        fancy:layout_constraintTop_toBottomOf="@+id/settings_display_name"
+        tools:ignore="HardcodedText" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:id="@+id/settings_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="@color/OrangeColor"
+        fancy:fb_defaultColor="@color/SplashBackground"
+        fancy:fb_focusColor="#475ac1"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Change Image"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:layout_constraintBottom_toTopOf="@+id/settings_status_button"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintLeft_toLeftOf="parent"
+        fancy:layout_constraintRight_toRightOf="parent"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toBottomOf="@+id/settings_status"
+        fancy:layout_constraintVertical_bias="0.987" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:id="@+id/settings_status_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="@color/SplashBackground"
+        fancy:fb_defaultColor="@color/OrangeColor"
+        fancy:fb_focusColor="#f29d56"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Change Status"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintLeft_toLeftOf="parent"
+        fancy:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

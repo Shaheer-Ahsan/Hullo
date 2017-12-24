@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#051726</color>
+    <color name="colorAccent">#051726</color>
+
+    <color name="SplashBackground">#051726</color>
+    <color name="white">#ffffff</color>
+    <color name="mainToolbarColor">#505884</color>
+    <color name="mainTabsColor">#b16d3d</color>
+    <color name="OrangeColor">#d96819</color>
+</resources>

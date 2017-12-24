@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/usersinglebackground">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/defaultavatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/user_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_single_image"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/user_single_image"
+        android:text="Display Name"
+        android:textColor="@color/SplashBackground"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/user_single_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/user_single_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_single_name"
+        android:layout_below="@+id/user_single_name"
+        android:text="Status"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/user_single_image"
+        app:layout_constraintTop_toBottomOf="@+id/user_single_name"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/user_single_online_icon"
+        android:layout_width="15dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@+id/user_single_name"
+        android:layout_alignTop="@+id/user_single_name"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/user_single_name"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/online_icon"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>
